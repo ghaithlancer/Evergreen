@@ -1,3 +1,48 @@
+Ghaith Haddad - Comments & Suggestions:
+
+From what I understand from the code & UI is that, this is basically a flight planner & scheduler that allows travellers plan their flights and see
+how much would it cost in both time and money.(Please correct me if im wrong)
+
+
+Comments: 
+
+- Major issues found include:
+    * The CSS crashed a couple of times while testing the app and it cause the header logo to enlarge greatly, taking most of the screen width 
+      and height with it. And that caused the rest of the pages CSS to not display the way it should. Only fix for the was to stop and restart the 
+      server. 
+    * Every button action taken on the app causes the entire app to re-render all the pages & api's which also adds to network bandwidth used and in turn
+      time complexity (app is very slow) -> which will lead to user dis-satisfaction. 
+- the UI is implemented in a professional way, atleast codewise. it could use some more eye catching & user friendly features, eg:
+    * fonts & colours
+    * show loading gif/window after submitting anything
+    * forms can be implemented/styled abit better
+- the backend is also implemented correctly but it's a bit too complex for the scope of the app (not considering production level). there's 
+  no need for the '/pages' directory and any of its files as that adds alot of time usage to every action taken on the app. The add/delete/edit options
+  can be implemented in a much simpler way especially if using a cloud service provider instead of hosted locally or on a private server; thus reducing
+  costs in many different ways.
+- Improvements/Recommendations: 
+    * Use a cloud service provider for DB.
+    * Reduce the number of re-renders by re-implementing the functions in the './pages' directory
+    * Add user authContext to keep track of user session and to stop user from gaining access to other users sessions/data/etc..
+    * Try to seperate the functionality from UI components, and keep functionality in middle or back end. This automatically adds a good layer of
+      security on the app. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Skyscanner Full-Stack Recruitment Test
 
 This a full-stack application utilizing Next.js. The frontend is styled with Material-UI components, and MongoDB is used to serve as the database. 
