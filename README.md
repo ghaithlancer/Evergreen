@@ -18,14 +18,14 @@ Comments:
     * forms can be implemented/styled abit better
 - the backend is also implemented correctly but it's a bit too complex for the scope of the app (not considering production level). there's 
   no need for the '/pages' directory and any of its files as that adds alot of time usage to every action taken on the app. The add/delete/edit options
-  can be implemented in a much simpler way especially if using a cloud service provider instead of hosted locally or on a private server; thus reducing
+  can be coded in a much simpler way especially if using a cloud service provider instead of hosted locally or on a private server; thus reducing
   costs in many different ways.
 - Improvements/Recommendations: 
     * Use a cloud service provider for DB.
     * Reduce the number of re-renders by re-implementing the functions in the './pages' directory
     * Add user authContext to keep track of user session and to stop user from gaining access to other users sessions/data/etc..
     * Try to seperate the functionality from UI components, and keep functionality in middle or back end. This automatically adds a good layer of
-      security on the app. 
+      security to the app. 
 
 
 
