@@ -11,6 +11,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 
 import Leg from './Leg'
 
+//Ghaith - why are we converting string -> string -> number/float -> string?
 const formatString = rating => {
   let str = rating.toString()
   let num = parseFloat(str).toFixed(1)
